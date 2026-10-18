@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Oxanium:wght@600;700;800;900&family=Space+Grotesk:wght@400;500;600;700;800;900&family=Syne:wght@700;800&display=swap');
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'SamuraiWarrior';
+  src: url('/Font/samurai-warrior-font/SamuraiWarrior-mL27a.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'CaptainCanaveral';
+  src: url('/Font/captain-canaveral-font/CaptainCanaveralSuperItalic-K4Y7.otf') format('opentype');
+  font-weight: 700 900;
+  font-style: italic, normal;
+  font-display: swap;
+}
+
+@theme {
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-display: 'Oxanium', 'Space Grotesk', sans-serif;
+  --font-space: 'Space Grotesk', sans-serif;
+  --font-samurai: 'SamuraiWarrior', 'Space Grotesk', sans-serif;
+  --font-bold-italic: 'CaptainCanaveral', 'Space Grotesk', sans-serif;
+  --color-coral: #FF624D;
+  --color-coral-hover: #FF7663;
+  --color-dark-bg: #0D0E10;
+}
+
+.font-samurai {
+  font-family: 'SamuraiWarrior', 'Space Grotesk', sans-serif;
+}
+
+.font-bold-italic {
+  font-family: 'CaptainCanaveral', 'Space Grotesk', sans-serif;
+  font-style: italic;
+  font-weight: 800;
+}
+
+/* Custom Card Stencil Font Fallback */
+.font-stencil {
+  font-family: 'Space Grotesk', 'Oxanium', monospace;
+  font-weight: 900;
+  letter-spacing: -0.04em;
+}
+
+@keyframes floatDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(6px);
+  }
+}
+
+.animate-float-down {
+  animation: floatDown 2s ease-in-out infinite;
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    opacity: 0.35;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.65;
+    transform: scale(1.04);
+  }
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 4s ease-in-out infinite;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(120, 120, 120, 0.3);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(120, 120, 120, 0.5);
+}
+
+/* Custom Samurai Cursor: hides system cursor gracefully on desktop devices */
+@media (pointer: fine) {
+  body.samurai-cursor-active,
+  body.samurai-cursor-active * {
+    cursor: none !important;
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Mainframe Hero Studio",
+  "description": "Modern interactive hero section with video scrubbing, typewriter animation, and service selection.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
