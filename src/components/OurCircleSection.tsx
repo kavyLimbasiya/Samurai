@@ -5,6 +5,7 @@
 
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
+import { getAssetUrl } from '../utils/asset';
 
 interface CardItem {
   id: string;
@@ -143,7 +144,7 @@ export default function OurCircleSection({ isDarkMode = false }: OurCircleSectio
                 >
                   {/* Full Cover Artwork (covers whole card) */}
                   <img
-                    src={card.image}
+                    src={getAssetUrl(card.image)}
                     alt={card.title}
                     className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-108"
                   />

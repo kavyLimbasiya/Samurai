@@ -145,7 +145,6 @@ export default function App() {
             className="w-full h-full object-cover object-center opacity-100 scale-100 transition-opacity duration-700"
           >
             <source src={heroVideo} type="video/mp4" />
-            <source src="/lv_0_20261010112733.mp4" type="video/mp4" />
           </video>
 
           {/* Micro-wash gradient for crisp contrast */}

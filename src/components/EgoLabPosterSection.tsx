@@ -5,6 +5,7 @@
 
 import React from 'react';
 import { motion } from 'motion/react';
+import { getAssetUrl } from '../utils/asset';
 
 // Geometric 8-Point Asterisk Star Icon matching reference image
 function AsteriskIcon({ className = 'w-6 h-6' }: { className?: string }) {
@@ -120,7 +121,7 @@ export default function EgoLabPosterSection({ isDarkMode = false }: EgoLabPoster
               {/* Full-Bleed Profile Image */}
               <div className="absolute inset-0 overflow-hidden">
                 <img
-                  src={profile.image}
+                  src={getAssetUrl(profile.image)}
                   alt={profile.name}
                   className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105"
                 />

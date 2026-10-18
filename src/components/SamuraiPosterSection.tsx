@@ -5,6 +5,7 @@
 
 import React from 'react';
 import { motion } from 'motion/react';
+import { getAssetUrl } from '../utils/asset';
 
 // Geometric 8-Point Asterisk Star Icon matching reference image
 function AsteriskIcon({ className = 'w-6 h-6' }: { className?: string }) {
@@ -145,7 +146,7 @@ export default function SamuraiPosterSection() {
               >
                 {/* Poster Background Image */}
                 <img
-                  src={poster.image}
+                  src={getAssetUrl(poster.image)}
                   alt={poster.alt}
                   className="w-full h-full object-cover object-center transition-transform duration-1000 group-hover:scale-105"
                 />

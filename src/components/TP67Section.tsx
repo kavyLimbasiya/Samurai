@@ -5,6 +5,7 @@
 
 import React from 'react';
 import { Sun, Moon } from 'lucide-react';
+import { getAssetUrl } from '../utils/asset';
 
 interface TP67SectionProps {
   isDarkMode?: boolean;
@@ -49,7 +50,7 @@ export default function TP67Section({
         {/* ──────────────── 3. UPPER HERO CARD: S10 (SAKURA BLOSSOM) ──────────────── */}
         <div className="relative w-full rounded-[20px] sm:rounded-[34px] overflow-hidden aspect-[16/10] sm:aspect-[21/9] lg:aspect-[2.3/1] bg-[#141518] shadow-md my-4 sm:my-6 group">
           <img
-            src="/images/k7.jpg"
+            src={getAssetUrl('/images/k7.jpg')}
             alt="Samurai Katana"
             className="w-full h-full object-cover object-center transition-transform duration-1000 group-hover:scale-[1.02]"
           />
@@ -67,7 +68,7 @@ export default function TP67Section({
           {/* ──── CARD 1: K1 (OBSIDIAN DIAMOND KATANA) ──── */}
           <div className="relative rounded-[22px] sm:rounded-[28px] overflow-hidden aspect-[4/5] sm:aspect-[3.6/4] bg-[#0E0F12] shadow-sm group">
             <img
-              src="/images/k1.jpg"
+              src={getAssetUrl('/images/k1.jpg')}
               alt="Obsidian Diamond Katana K1"
               className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105"
             />
@@ -91,7 +92,7 @@ export default function TP67Section({
           {/* ──── CARD 2: K2 (DAMASCUS SAKURA TSUBA KATANA) ──── */}
           <div className="relative rounded-[22px] sm:rounded-[28px] overflow-hidden aspect-[4/5] sm:aspect-[3.6/4] bg-[#0E0F12] shadow-sm group">
             <img
-              src="/images/k2.jpg"
+              src={getAssetUrl('/images/k2.jpg')}
               alt="Damascus Sakura Katana K2"
               className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105"
             />
@@ -115,7 +116,7 @@ export default function TP67Section({
           {/* ──── CARD 3: K3 (GREAT WAVE BLUE PORCELAIN KATANA) ──── */}
           <div className="relative rounded-[22px] sm:rounded-[28px] overflow-hidden aspect-[4/5] sm:aspect-[3.6/4] bg-[#0E0F12] shadow-sm group">
             <img
-              src="/images/k3.jpg"
+              src={getAssetUrl('/images/k3.jpg')}
               alt="Great Wave Porcelain Katana K3"
               className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105"
             />
